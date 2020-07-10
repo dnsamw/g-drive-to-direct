@@ -1,0 +1,41 @@
+<!-- https://drive.google.com/file/d/1TJpnhjuAM7ip6458PJeD3nFpraztIwc4/view?usp=sharing
+https://drive.google.com/uc?export=download&id=1TJpnhjuAM7ip6458PJeD3nFpraztIwc4
+<!DOCTYPE html> -->
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <div id="input-data">
+      <label>Enter Google drive sharable link:</label>
+      <input
+        id="linkInput"
+        type="text"
+        name="inoutUrl"
+        id="input-url"
+        style="width: 80%;"
+      />
+      <input
+        type="button"
+        name="pasteButton"
+        id="paste-button"
+        value="convert"
+        onclick="convertLink()"
+      />
+    </div>
+    <div id="outputDirect"></div>
+    <script src="function.js" />
+
+    <script type="text/javascript">
+      function paste() {
+        var inputData = window.clipboardData.getData("Text");
+        console.log(inputData);
+        if (window.clipboardData) {
+          document.getElementById(
+            "input-url"
+          ).value = window.clipboardData.getData("Text");
+        }
+      }
+    </script>
+  </body>
+</html>
