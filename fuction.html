@@ -3,9 +3,12 @@ https://drive.google.com/uc?export=download&id=1TJpnhjuAM7ip6458PJeD3nFpraztIwc4
 <!DOCTYPE html> -->
 <html>
   <head>
-    <title></title>
+    <title>G-Drive to Direct Link</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
+  	<div class="container center">
     <div id="input-data">
       <label>Enter Google drive sharable link:</label>
       <input
@@ -22,8 +25,10 @@ https://drive.google.com/uc?export=download&id=1TJpnhjuAM7ip6458PJeD3nFpraztIwc4
         value="convert"
         onclick="convertLink()"
       />
+      <div id="outputDirect"></div>
     </div>
-    <div id="outputDirect"></div>
+    
+</div>
     <script src="function.js" />
 
     <script type="text/javascript">
